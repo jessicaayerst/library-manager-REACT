@@ -17,5 +17,10 @@ export default {
         available: false
       }),
     })
+  },
+  getReviews(ISBN) {
+    return fetch(
+      `https://www.goodreads.com/book/isbn/${ISBN}?callback=myCallback&format=json&user_id=f8DXs2jYGQLBW6V8igQj5g`
+    )
   }
 }

@@ -20,18 +20,24 @@
       "id": 3,
       "title": "The Bible",
       "author": "Original God",
+      "ISBN": " 9781432119577",
+      "coverPhoto": "https://images-na.ssl-images-amazon.com/images/I/41UbjgRN%2B3L._SY498_BO1,204,203,200_.jpg",
       "available": true
     },
     {
       "id": 4,
-      "title": "Kings and Pharaohs",
-      "author": "Jerry Springer",
+      "title": "Ptolemy I: King and Pharaoh of Egypt",
+      "author": "Ian Worthington",
+      "ISBN": "9780190202330",
+      "coverPhoto": "https://images-na.ssl-images-amazon.com/images/I/51muWblrL6L._SX327_BO1,204,203,200_.jpg",
       "available": true
     },
     {
       "id": 5,
-      "title": "Sign Language",
-      "author": "Larry Star",
+      "title": "Learn American Sign Language",
+      "author": "James W. Guido",
+      "ISBN": "9781577151074",
+      "coverPhoto": "https://images-na.ssl-images-amazon.com/images/I/51Ggm1ASuCL._SX258_BO1,204,203,200_.jpg",
       "available": true
     }
   ],
@@ -40,24 +46,32 @@
       "id": 1,
       "name": "Pamerla Anderson",
       "address": "123 Short Way",
+      "email": "parm@gmail.com",
+      "phone": "(304)523-3344",
       "active": true
     },
     {
       "id": 2,
       "name": "Jack White",
       "address": "321 Free Way",
+      "email": "jackie@gmail.com",
+      "phone": "(304)456-3987",
       "active": true
     },
     {
       "id": 3,
       "name": "Stone Cold",
       "address": "43 Austin Street",
+      "email": "stonie@gmail.com",
+      "phone": "(304)476-8345",
       "active": true
     },
     {
       "id": 4,
       "name": "Albert China",
       "address": "754 Work Avenue",
+      "email": "china@gmail.com",
+      "phone": "(304)527-7777",
       "active": true
     }
   ]

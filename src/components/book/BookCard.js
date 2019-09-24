@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class BookCard extends Component {
   render() {
@@ -10,7 +11,7 @@ class BookCard extends Component {
           </picture>
           <h3>Title: <span className="card-petname">{this.props.bookProp.title}</span></h3>
           <p>Author: {this.props.bookProp.author}</p>
-          <button type="button" onClick={() => this.props.deleteBook(this.props.bookProp.id)}>Mark Unavailable</button>
+          <Link to={`/books/${this.props.bookProp.id}`}><button>Details</button></Link>
         </div>
       </div>
     );

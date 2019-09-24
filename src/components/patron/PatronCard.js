@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 class PatronCard extends Component {
   render() {
     return (
@@ -9,8 +9,8 @@ class PatronCard extends Component {
             <img src={require('./person.jpg')} alt="Person" />
           </picture>
           <h3>Name: <span className="card-petname">{this.props.patronProp.name}</span></h3>
-          <p>Address: {this.props.patronProp.address}</p>
-          <button type="button" onClick={() => this.props.deletePatron(this.props.patronProp.id)}>Mark Inactive</button>
+          <Link to={`/patrons/${this.props.patronProp.id}`}><button>Details</button></Link>
+
         </div>
       </div>
     );

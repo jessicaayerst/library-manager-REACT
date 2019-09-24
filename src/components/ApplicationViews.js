@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import Home from './home/Home'
 import BookList from './book/BookList'
 import PatronList from './patron/PatronList'
+import BookDetail from './book/BookDetail'
+import PatronDetail from './patron/PatronDetail'
 
 
 class ApplicationViews extends Component {
@@ -13,11 +15,19 @@ class ApplicationViews extends Component {
         <Route exact path="/" render={(props) => {
           return <Home />
         }} />
-        <Route path="/books" render={(props) => {
+        <Route exact path="/books" render={(props) => {
           return <BookList />
         }} />
-        <Route path="/patrons" render={(props) => {
+        <Route path="/books/:bookId(\d+)" render={(props) => {
+          // Pass the bookId to the BookDetailComponent
+          return <BookDetail {...props} bookId={parseInt(props.match.params.bookId)} />
+        }} />
+        <Route exact path="/patrons" render={(props) => {
           return <PatronList />
+        }} />
+        <Route path="/patrons/:patronId(\d+)" render={(props) => {
+          // Pass the patronId to the PatronDetailComponent
+          return <PatronDetail {...props} patronId={parseInt(props.match.params.patronId)} />
         }} />
       </React.Fragment>
     )
