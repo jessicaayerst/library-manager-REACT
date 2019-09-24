@@ -1,51 +1,64 @@
 {
-    "books": [
-        {
-            "id": 1,
-            "title": "Charlotte's Web",
-            "author": "Jessica Ayerst"
-        },
-        {
-            "id": 2,
-            "title": "Spiders",
-            "author": "Johnny Law"
-        },
-        {
-            "id": 3,
-            "title": "The Bible",
-            "author": "Original God"
-        },
-        {
-            "id": 4,
-            "title": "Kings and Pharaohs",
-            "author": "Jerry Springer"
-        },
-        {
-            "id": 5,
-            "title": "Sign Language",
-            "author": "Larry Star"
-        }
-    ],
-    "patrons": [
-        {
-            "id": 1,
-            "name": "Pamerla Anderson",
-            "address": "123 Short Way"
-        },
-        {
-            "id": 2,
-            "name": "Jack White",
-            "address": "321 Free Way"
-        },
-        {
-            "id": 3,
-            "name": "Stone Cold",
-            "address": "43 Austin Street"
-        },
-        {
-            "id": 4,
-            "name": "Albert China",
-            "address": "754 Work Avenue"
-        }
-    ]
+  "books": [
+    {
+      "id": 1,
+      "title": "Charlotte's Web",
+      "author": "E. B. White",
+      "ISBN": "9780758701787",
+      "coverPhoto": "https://books.google.com/books/content/images/frontcover/WwN4BgAAQBAJ?fife=w200-h300",
+      "available": true
+    },
+    {
+      "id": 2,
+      "title": "Scary Spiders",
+      "author": "Lynn Huggins-Cooper",
+      "ISBN": "9781583409350",
+      "coverPhoto": "https://books.google.com/books/content?id=o_luemd0a2YC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72UiZQIRwZeRy7089-zvp-CQsuUSu_B4aXccFPNTQ6QhGUCdK9VEijiuHmIWzeHFbTKZSmMu8koaF4DQzwUAF9aMKKj85Vjrw0-lYHgH5OJpBa8ekbAbLQPmEI_xfX9PWCK188X",
+      "available": true
+    },
+    {
+      "id": 3,
+      "title": "The Bible",
+      "author": "Original God",
+      "available": true
+    },
+    {
+      "id": 4,
+      "title": "Kings and Pharaohs",
+      "author": "Jerry Springer",
+      "available": true
+    },
+    {
+      "id": 5,
+      "title": "Sign Language",
+      "author": "Larry Star",
+      "available": true
+    }
+  ],
+  "patrons": [
+    {
+      "id": 1,
+      "name": "Pamerla Anderson",
+      "address": "123 Short Way",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Jack White",
+      "address": "321 Free Way",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Stone Cold",
+      "address": "43 Austin Street",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Albert China",
+      "address": "754 Work Avenue",
+      "active": true
+    }
+  ]
 }

@@ -6,5 +6,16 @@ export default {
   },
   getAll() {
     return fetch(`${remoteURL}/books`).then(result => result.json())
+  },
+  delete(id) {
+    return fetch (`${remoteURL}/books/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        available: false
+      }),
+    })
   }
 }

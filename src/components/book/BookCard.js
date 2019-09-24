@@ -10,6 +10,7 @@ class BookCard extends Component {
           </picture>
           <h3>Title: <span className="card-petname">{this.props.bookProp.title}</span></h3>
           <p>Author: {this.props.bookProp.author}</p>
+          <button type="button" onClick={() => this.props.deleteBook(this.props.bookProp.id)}>Mark Unavailable</button>
         </div>
       </div>
     );

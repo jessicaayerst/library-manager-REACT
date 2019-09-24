@@ -9,6 +9,17 @@ class PatronList extends Component {
         patrons: [],
     }
 
+deletePatron = id => {
+        PatronManager.delete(id)
+        .then(() => {
+          PatronManager.getAll()
+          .then((newPatrons) => {
+            this.setState({
+                patrons: newPatrons
+            })
+          })
+        })
+      }
 componentDidMount(){
     console.log("PATRON LIST: ComponentDidMount");
     //getAll from PatronManager and hang on to that data; put it in state
@@ -25,7 +36,9 @@ render(){
 
     return(
         <div className="container-cards">
-            {this.state.patrons.map(singlePatron => <PatronCard key={singlePatron.id} patronProp={singlePatron} />)}
+            {this.state.patrons.map(singlePatron =>
+                singlePatron.active ?
+                <PatronCard key={singlePatron.id} patronProp={singlePatron} deletePatron={this.deletePatron}/> : ``)}
         </div>
     )
 }

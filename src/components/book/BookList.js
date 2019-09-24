@@ -8,7 +8,17 @@ class BookList extends Component {
     state = {
         books: [],
     }
-
+deleteBook = id => {
+        BookManager.delete(id)
+        .then(() => {
+          BookManager.getAll()
+          .then((newBooks) => {
+            this.setState({
+                books: newBooks
+            })
+          })
+        })
+      }
 componentDidMount(){
     console.log("BOOK LIST: ComponentDidMount");
     //getAll from PatronManager and hang on to that data; put it in state
@@ -25,7 +35,9 @@ render(){
 
     return(
         <div className="container-cards">
-            {this.state.books.map(singleBook => <BookCard key={singleBook.id} bookProp={singleBook} />)}
+            {this.state.books.map(singleBook =>
+            singleBook.available ?
+            <BookCard key={singleBook.id} bookProp={singleBook} deleteBook={this.deleteBook}/> : ``)}
         </div>
     )
 }
